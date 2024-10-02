@@ -1,0 +1,235 @@
+\section{Analysis and Characterization of Prior Work}
+\subsection{C2c: Predicting Micro-C from Hi-C}
+\subsubsection{Main Character}
+The main focus is the C2c model, a computational tool developed to predict Micro-C contact maps from Hi-C data using a residual neural network. The characters also include Hi-C and Micro-C, the two chromatin interaction technologies.
+\subsubsection{Character's Need}
+The C2c model's goal is to generate high-resolution Micro-C data from existing Hi-C data. This addresses the challenge of obtaining more detailed chromatin interaction data without the technical difficulties of running Micro-C experiments.
+\subsubsection{Motive for the Goal}
+The need arises from the technical complexity and cost of Micro-C experiments. Developing a computational tool like C2c allows for better usage of the abundant Hi-C data available in the scientific community and enables high-resolution chromatin research at a lower cost.
+\subsubsection{Conflicts and Problems}
+The key challenge is the resolution gap between Hi-C and Micro-C, as Hi-C experiments often fail to capture finer chromatin structures like those seen in Micro-C data. The model must overcome this by accurately predicting fine-scale interactions.
+\subsubsection{Risks and Dangers}
+If the C2c model fails to accurately predict Micro-C data, it may lead to incorrect interpretations of chromatin interactions and structures, which are crucial for understanding gene regulation.
+\subsubsection{Actions Taken}
+The C2c tool uses a deep learning-based residual neural network to map Hi-C contact matrices to Micro-C contact matrices. The authors trained and tested the model using high-resolution data and performed various evaluations, including loop detection and TAD boundary identification.
+\subsubsection{Sensory Details}
+The paper provides detailed data visualizations such as heatmaps, APA scores, and statistical results, making the model's performance tangible and verifiable. Examples include improved detection of chromatin loops and better alignment with experimental data.
+\subsubsection{Resolution}
+The C2c model successfully predicts Micro-C contact maps with higher accuracy than existing methods, revealing more chromatin loops and providing more promoter-enhancer interaction data. The tool is also validated on human embryonic stem cells, demonstrating its robustness across species.
+
+\subsubsection{Methaphoric Characterization}
+The Genetic Architect
+
+\subsection{Human pangenome analysis of sequences missing from the reference genome reveals their widespread evolutionary, phenotypic, and functional roles}
+\subsubsection{Main Character}
+The Non-Reference Sequences (NRSs) are the focal point of the paper. These are the genomic sequences absent in the current human reference genome but present in various global populations.
+\subsubsection{Character's Need}
+The need here is to identify and analyze these missing NRSs from the human reference genome, especially to understand their evolutionary, phenotypic, and functional significance.
+\subsubsection{Motive for the Goal}
+Understanding the NRSs is critical because the current human reference genome is incomplete and biased toward a limited subset of human diversity. This limits insights into population-specific variations that could be critical for medical and evolutionary research.
+\subsubsection{Conflicts and Problems}
+The main challenge is the incomplete nature of the human reference genome and the difficulty in detecting these NRSs using traditional methods. It requires long-read sequencing technology and graph-based pangenome construction to tackle these issues.
+\subsubsection{Risks and Dangers}
+If the study fails, the scientific community risks continuing to rely on an incomplete reference genome, leading to potential gaps in understanding human evolution, disease associations, and population-specific genomic traits.
+\subsubsection{Actions Taken}
+The researchers de novo assembled 539 genomes from genetically diverse populations using long-read sequencing. They constructed a graph-based pangenome and performed functional and evolutionary analyses on the detected NRSs.
+\subsubsection{Sensory Details}
+The paper provides detailed quantitative data, such as the identification of 5.1 million NRSs, merging into 45,284 unique sequences. These sequences were functionally annotated, and many were shown to play roles in metabolism, type 2 diabetes, and local adaptation.
+\subsubsection{Resolution}
+The study successfully identified novel NRSs that were widespread across populations and functionally significant. This greatly expands the knowledge of human genetic diversity, providing critical resources for evolutionary and biomedical research.
+\subsubsection{Methaphoric Characterization}
+The Evolutionary Lens.
+
+\subsection{Learning Micro-C from Hi-C with Diffusion Models}
+
+\subsubsection{Main Character}
+The main focus is the HiC2MicroC model, which uses a denoising diffusion probabilistic model (DDPM) to predict Micro-C contact maps from Hi-C data.
+
+\subsubsection{Character's Needs}
+The HiC2MicroC model aims to leverage the abundant Hi-C data to predict Micro-C data, which is less available but provides higher resolution insights into chromatin loops and interactions.
+
+\subsubsection{Motive for the Goal}
+The scarcity of publicly available Micro-C data compared to the vast amount of Hi-C data creates a need for a model like HiC2MicroC to unlock the higher resolution benefits of Micro-C without requiring extensive new experiments.
+
+\subsubsection{Conflicts and Problems}
+The challenge is the resolution gap between Hi-C and Micro-C and the limited availability of Micro-C data, making it difficult to study fine chromatin structures and regulatory elements with existing Hi-C datasets.
+
+\subsubsection{Risks and Dangers}
+If the model fails, it would result in misinterpretations of chromatin interactions and hinder the understanding of complex genomic structures, potentially leading to misleading biological insights.
+
+\subsubsection{Actions Taken}
+The paper describes the development of HiC2MicroC, which uses DDPM to progressively denoise Hi-C data and enhance it to predict Micro-C-like structures. The model is trained on human foreskin fibroblasts and validated across multiple cell types.
+
+\subsubsection{Sensory Details}
+The authors provide visualizations and detailed results, such as recovery of chromatin loops, showing that HiC2MicroC can predict finer-scale interactions similar to experimental Micro-C. Data visualizations include heatmaps, loop recovery percentages, and chromatin structure plots.
+
+\subsubsection{Resolution}
+HiC2MicroC successfully recovers most Micro-C loops that are not detected in Hi-C and shares genomic and epigenetic properties with actual Micro-C loops. The model provides a robust tool for further studying chromatin interactions with higher resolution than previously possible using Hi-C data alone.
+
+\subsubsection{Methaphoric Characterization}
+The Precision Genome Mapper
+
+
+\subsection{Pan-3D genome analysis reveals structural and functional differentiation of soybean genomes}
+\subsubsection{Main Character}
+The pan-3D genome of soybean accessions is the primary focus, specifically the chromatin structures (A/B compartments, TAD boundaries, and their variations) across 27 different soybean genomes.
+
+\subsubsection{Character's Needs}
+The study seeks to explore the 3D genome architecture and its variation among different soybean accessions to better understand their evolution, gene regulation, and breeding potential.
+
+\subsubsection{Motive for the Goal}
+Understanding the 3D genomic differences in soybean varieties is essential for plant breeding and genomic research. The goal is to determine how these variations affect gene expression, genome evolution, and traits relevant to soybean domestication and improvement.
+
+\subsubsection{Conflicts and Problems}
+The challenge lies in the limited understanding of 3D genome variations in plant species, especially in soybeans. The study also needs to correlate the structural variations (SVs) in the genome with these 3D architectural differences.
+
+\subsubsection{Risks and Dangers}
+If the analysis fails to reveal the significance of these 3D variations, it could limit the effectiveness of breeding programs and genomic studies in soybeans, making it harder to identify key functional traits or evolutionary changes.
+
+\subsubsection{Actions Taken}
+The researchers performed Hi-C sequencing and pan-3D genome analysis across 27 soybean accessions, identified A/B compartments, TAD boundaries, and linked them with structural variations and gene expression.
+
+\subsubsection{Sensory Details}
+The study presents detailed genomic data showing differences in A/B compartments, TAD boundary distribution, and gene expression in various soybean accessions. It also highlights the role of non-LTR retrotransposons and Gypsy elements in maintaining or altering these boundaries.
+
+\subsubsection{Resolution}
+The study successfully provides a pan-3D genome map of soybeans, demonstrating that structural variations and 3D genome organization play a significant role in soybean evolution and gene regulation. It also offers insights into how these variations can be leveraged for future breeding efforts.
+
+\subsubsection{Methaphoric Characterization}
+The Evolutionary Lens.
+
+\subsection{The Human Pangenome Project: a global resource to map genomic diversity}
+\subsubsection{Main Character}
+The main character is the Human Pangenome Project (HPRC), a global initiative aimed at creating a more inclusive and complete human reference genome by incorporating diverse genomic data.
+
+\subsubsection{Character's Needs}
+The HPRC seeks to expand the human reference genome to include genomic diversity from populations across the globe. This is necessary to improve genomic studies, gene-disease associations, and to overcome the limitations of the current reference genome, which predominantly represents a small subset of humanity.
+
+\subsubsection{Motive for the Goal}
+The current human reference genome, while foundational, is incomplete and biased, as it represents only a fraction of human genomic diversity. The project aims to create a pangenome that includes global genetic variants to improve precision medicine and scientific research for all populations.
+
+\subsubsection{Conflicts and Problems}
+The challenge is in gathering sufficient data from underrepresented populations, overcoming technological limitations in sequencing and assembly, and managing the ethical considerations involved in working with diverse communities.
+
+\subsubsection{Risks and Dangers}
+Without a comprehensive pangenome, there is a risk of continuing bias in genomic studies, missing key genetic variants that could be relevant for understanding diseases and traits across all populations. This would further marginalize groups not represented in current databases.
+
+\subsubsection{Actions Taken}
+The HPRC engages in multidisciplinary collaboration, leveraging advances in long-read sequencing and graph-based genome representations. It is working with international partners to ensure ethical and inclusive recruitment while developing the necessary bioinformatic tools for a pangenome reference.
+
+\subsubsection{Sensory Details}
+The study includes data from diverse sequencing platforms, developing a graph-based pangenome that allows for the integration of multiple haplotypes. The details of genome construction and variant identification are thoroughly discussed, supported by visualizations of genome alignment and variation detection.
+
+\subsubsection{Resolution}
+The HPRC is constructing a telomere-to-telomere human pangenome reference, which will ultimately enhance genomic research and clinical applications by providing a more accurate and diverse representation of the human genome.
+
+\subsubsection{Methaphoric Characterization}
+The Genetic Architect
+
+
+\subsection{The Need for a Human Pangenome Reference Sequence}
+\subsubsection{Main Character}
+The Human Pangenome Reference is the main character, which represents a new effort to build a more inclusive, diverse, and complete reference genome for human populations.
+
+\subsubsection{Character's Needs}
+The paper discusses the need to modernize the human reference genome to reflect the genomic diversity of the global population. This is crucial for improving the accuracy and utility of genomic research, particularly in clinical and biomedical contexts.
+
+\subsubsection{Motive for the Goal}
+The current reference genome is biased toward a small subset of the population and does not adequately represent the genetic diversity that exists globally. Creating a pangenome reference will allow for more inclusive genomic studies and improve precision medicine by accounting for population-specific variations.
+
+\subsubsection{Conflicts and Problems}
+The challenge is in assembling a comprehensive pangenome that includes diverse populations and captures the full scope of genetic variation. The technical difficulties include managing long-read sequencing technologies and addressing the ethical considerations involved in population sampling.
+
+\subsubsection{Risks and Dangers}
+Without an updated, inclusive reference genome, there is a risk of perpetuating biases in genomic research, which could lead to incorrect interpretations in studies involving populations not well represented in the current reference genome.
+
+\subsubsection{Actions Taken}
+The authors propose using long-read sequencing technologies, haplotype-phased genome assemblies, and graph-based models to construct the pangenome. They also emphasize the need for multidisciplinary collaboration and ethical frameworks to guide population sampling.
+
+\subsubsection{Sensory Details}
+The paper includes discussions on the technical aspects of creating a pangenome, with references to improvements in sequencing accuracy, bioinformatic tools, and visual representations of genetic diversity using graph models.
+
+\subsubsection{Resolution}
+The creation of a Human Pangenome Reference will enable a more accurate representation of human genetic diversity, leading to better disease association studies and improved precision medicine outcomes.
+
+\subsubsection{Methaphoric Characterization}
+The Precision Genome Mapper
+
+
+
+\subsection{panX: pan-genome analysis and exploration}
+\subsubsection{Main Character}
+The main character is panX, a tool developed for the exploration and analysis of bacterial pan-genomes using orthologous gene clusters and evolutionary relationships.
+
+\subsubsection{Character's Needs}
+panX seeks to provide researchers with an efficient and interactive platform to study the evolution of bacterial genomes, focusing on gene gain, loss, and horizontal transfer, which are crucial for understanding bacterial diversity.
+
+\subsubsection{Motive for the Goal}
+The need for such a tool arises from the complexity of bacterial genome evolution, where horizontal gene transfer and recombination complicate traditional phylogenetic analyses. panX aims to enable more accurate and detailed exploration of pan-genomes, aiding research in areas like antibiotic resistance and evolutionary studies.
+
+\subsubsection{Conflicts and Problems}
+One of the main challenges addressed by panX is the difficulty in visualizing and interpreting pan-genomic data. Traditional methods struggle with the sheer volume of data and the diversity within bacterial genomes. Efficient clustering of orthologous genes and the visualization of phylogenetic trees are crucial to solving this problem.
+
+\subsubsection{Risks and Dangers}
+Without an effective tool like panX, researchers could face misinterpretations of bacterial evolution, potentially overlooking important events like gene transfer that could affect studies in public health, such as antibiotic resistance tracking.
+
+\subsubsection{Actions Taken}
+panX implements a divide-and-conquer strategy to cluster genes efficiently, combined with interactive web-based visualization. It performs all-against-all similarity searches, builds phylogenetic trees, and enables researchers to interactively explore gene clusters and evolutionary histories.
+
+\subsubsection{Sensory Details}
+The paper includes detailed explanations of panX's computational pipeline, including gene cluster visualization and the mapping of mutations onto phylogenetic trees. The tool allows users to filter, search, and inspect gene clusters dynamically via a user-friendly web interface.
+
+\subsubsection{Resolution}
+panX provides an effective, scalable, and interactive platform for pan-genome analysis, helping researchers to explore complex bacterial evolution patterns, such as horizontal gene transfer, with greater ease and accuracy. It is available for use both on the web and as a locally hosted application.
+
+
+\subsubsection{Methaphoric Characterization}
+The Genome Explorer
+
+
+\subsection{Pan-genomics in the human genome era}
+\subsubsection{Main Character}
+The main character is the concept of pan-genomics, which involves creating a pan-genome that includes the full range of genetic diversity within a species, extending beyond a single reference genome.
+
+\subsubsection{Character's Needs}
+The pan-genome approach is needed to overcome the limitations of relying on a single reference genome. It seeks to capture the genomic diversity that is absent from the current human reference genome to improve our understanding of human variation and its implications for health and disease.
+
+\subsubsection{Motive for the Goal}
+The motive is driven by the realization that a single reference genome is inadequate for representing the full genetic diversity of human populations. The goal is to incorporate a broader spectrum of genomes to better understand genetic diseases, population genetics, and evolutionary biology.
+
+\subsubsection{Conflicts and Problems}
+The main conflict lies in the technical and computational challenges of constructing a pan-genome, especially for species with large, complex genomes like humans. Additionally, ethical and logistical issues arise from collecting diverse genomic data across populations.
+
+\subsubsection{Risks and Dangers}
+Without a comprehensive pan-genome, genetic studies may remain biased towards a few populations, leading to incomplete or inaccurate findings regarding disease susceptibility and other traits across global populations.
+
+\subsubsection{Actions Taken}
+Researchers have begun using long-read sequencing technologies, graph-based genome representations, and computational methods to detect and catalog genomic variants, including large structural variations, that are missed by the current reference genome.
+
+\subsubsection{Sensory Details}
+The paper discusses the advances in sequencing technologies, such as long-read sequencing, which allow for the assembly of complex genomic regions, and the development of tools to visualize and analyze genomic variation using graphical genome representations.
+
+\subsubsection{Resolution}
+The shift towards pan-genomic approaches promises to provide a more accurate and inclusive representation of human genetic diversity, paving the way for new biological discoveries and enhancing the potential for precision medicine.
+
+
+\subsubsection{Methaphoric Characterization}
+The Genome Explorer.
+
+
+
+\section{Meeting With Advisor}
+\subsection{Feedback on Initial Survey Trajectory}
+Sequel to an exhaustive analysis of potential survey directions, my advisor deems it more rewarding and time-conscious to consider a research paper at this time.
+
+\subsection{Insight and Recommended Research Direction}
+Having recently concluded a research where we advanced a deep-learning and data augmentation-based method towards advancing the Hi-C data resolution enhancement niche in the Genome Structure and Organization research domain, my advisor thinks it best to look to tackle another pressing challenge in the field immediately. This time, he proposed that I work on addressing Hi-C data availability limitations by imputing from another genomic analysis technique, inspired by the imputation of Micro-C from Hi-C by \cite{liu2024learning}. This idea is particularly viable because I already have preliminary results with a deep learning model I built earlier in the year but is awaiting an application within the genomic data architecture sphere.
+
+
+\subsubsection{New Proposed Topic}
+\begin{itemize}
+    \item UNet-driven Hi-C Data Imputation Using Pan-genome Insights
+\end{itemize}
+
+\nocite{*}
+
